@@ -18,15 +18,25 @@ export const theme = createMuiTheme({
           color: "#212121",
           fontSize: "3rem",
           fontWeight: "500",
-          margin: "10px 0 40px"
+          margin: "10px 0 30px"
         },
         "&.MuiTypography-h2": {
           color: "#757575",
-          fontSize: "1.75rem"
+          fontSize: "1.75rem",
+          padding: "0 0 25px"
         },
         "&.MuiTypography-body1": {
           color: "#424242",
-          fontSize: "18px"
+          fontSize: "18px",
+          padding: "0 0 10px"
+        },
+        "&.MuiTypography-body1.text-name": {
+          fontWeight: 600,
+          fontSize: "24px"
+        },
+        "&.MuiTypography-body1.text-profession": {
+          fontSize: "18px",
+          color: "#424242"
         }
       }
     },
@@ -55,6 +65,17 @@ export const theme = createMuiTheme({
     MuiAvatar: {
       root: {
         margin: "10px 0 35px"
+      }
+    },
+    MuiLinearProgress: {
+      root: {
+        margin: "5px 0 15px",
+        "&.MuiLinearProgress-colorPrimary": {
+          backgroundColor: "#ddd"
+        },
+        "& .MuiLinearProgress-bar1Determinate": {
+          backgroundColor: "#4db6ac"
+        }
       }
     }
   }
