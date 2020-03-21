@@ -7,13 +7,11 @@ import Language from "../Language";
 import Skill from "../Skill";
 import Experience from "../Experience";
 import Education from "../Education";
-import Icon from "../Icon";
 
 function MainResume() {
   return (
     <>
       <Paper square elevation={3}>
-        <Icon type="share" width={18} heigth={18}></Icon>
         <Presentation></Presentation>
         <Divider></Divider>
         <Grid item container xs={12}>
