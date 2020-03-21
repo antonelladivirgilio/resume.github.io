@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Typography, Button } from "@material-ui/core";
+import Icon from "../Icon";
 
 function Presentation() {
   return (
@@ -21,7 +22,9 @@ function Presentation() {
       <Grid item container>
         <Button
           variant="outlined"
-          // startIcon={}
+          startIcon={
+            <Icon type="share" width={18} heigth={18} fill="#000"></Icon>
+          }
         >
           Share
         </Button>
