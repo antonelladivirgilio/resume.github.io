@@ -1,7 +1,14 @@
 import React from "react";
 import { paths } from "../../paths";
 
-function Icon({ width = "18", heigth = "18", type, fill = "#000", ...props }) {
+function Icon({
+  width = "18",
+  heigth = "18",
+  type,
+  viewBox = "0 0 500 500",
+  fill = "#000",
+  ...props
+}) {
   return (
     <>
       <svg
@@ -9,7 +16,7 @@ function Icon({ width = "18", heigth = "18", type, fill = "#000", ...props }) {
         xmlnsXlink="http://www.w3.org/1999/xlink"
         width={width}
         heigth={heigth}
-        viewBox="0 0 500 500"
+        viewBox={viewBox}
         focusable="false"
         role="presentation"
       >
