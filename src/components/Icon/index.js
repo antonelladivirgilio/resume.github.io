@@ -1,13 +1,7 @@
 import React from "react";
 import { paths } from "../../paths";
 
-function Icon({
-  width = "18",
-  heigth = "18",
-  type = "share",
-  fill = "red",
-  ...props
-}) {
+function Icon({ width = "18", heigth = "18", type, fill = "#000", ...props }) {
   return (
     <>
       <svg
@@ -16,8 +10,10 @@ function Icon({
         width={width}
         heigth={heigth}
         viewBox="0 0 500 500"
+        focusable="false"
+        role="presentation"
       >
-        <path {...props} d={paths[type]} />
+        <path {...props} fill={fill} d={paths[type]} />
       </svg>
     </>
   );
