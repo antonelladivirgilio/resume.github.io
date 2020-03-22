@@ -2,6 +2,7 @@ import React from "react";
 
 import { Grid, Avatar, Paper, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import Icon from "../Icon";
 
 const useStyles = makeStyles(theme => ({
   large: {
@@ -23,19 +24,55 @@ function Aside() {
           />
         </Grid>
         <Grid item container justify="center">
-          <Typography component="p" gutterBottom lang="it">
+          <Typography
+            component="p"
+            gutterBottom
+            lang="it"
+            className="text-name"
+          >
             Antonella Di Virgilio
           </Typography>
         </Grid>
         <Grid item container justify="center">
-          <Typography variant="body1" gutterBottom>
+          <Typography variant="body1" gutterBottom className="text-profession">
             Developer
           </Typography>
         </Grid>
-        <Grid item container justify="center">
-          <Typography variant="body1" gutterBottom>
-            redes sociales
-          </Typography>
+        <Grid item container justify="center" spacing={2}>
+          <Grid item>
+            <a
+              href="https://github.com/antonelladivirgilio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="go to github profile"
+            >
+              <Icon
+                type="github"
+                width={25}
+                heigth={25}
+                fill="#000"
+                viewBox="0 0 568 568"
+                alt="github logo"
+              ></Icon>
+            </a>
+          </Grid>
+          <Grid item>
+            <a
+              href="https://www.linkedin.com/in/divirgilioantonella/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="go to linkedin profile"
+            >
+              <Icon
+                type="linkedin"
+                width={25}
+                heigth={25}
+                fill="#000"
+                viewBox="0 0 512 512"
+                alt="linkedin logo"
+              ></Icon>
+            </a>
+          </Grid>
         </Grid>
         <Grid item container justify="center">
           <Button variant="contained">Download CV</Button>
