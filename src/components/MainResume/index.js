@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Typography, Divider } from "@material-ui/core";
+import { Grid, Paper, Typography, Divider, Hidden } from "@material-ui/core";
 
 import Presentation from "../Presentation";
 import PersonalInformation from "../PersonalInformation";
@@ -15,10 +15,15 @@ function MainResume() {
         <Presentation></Presentation>
         <Divider></Divider>
         <Grid item container xs={12}>
-          <Grid item container xs={12} md={6}>
+          <Grid item xs={12} lg={6}>
             <PersonalInformation></PersonalInformation>
           </Grid>
-          <Grid item container xs={12} md={6}>
+          <Hidden lgUp>
+            <Grid item xs={12}>
+              <Divider></Divider>
+            </Grid>
+          </Hidden>
+          <Grid item container xs={12} lg={6}>
             <Language></Language>
           </Grid>
         </Grid>

@@ -8,18 +8,18 @@ function PersonalInformation() {
         <Typography variant="h2">Personal information</Typography>
       </Grid>
       <Grid xs={12} item container alignItems="center">
-        <Grid xs={3} item className="text-bold-label">
+        <Grid xs={12} md={3} item className="text-bold-label">
           FULL NAME
         </Grid>
-        <Grid xs={9} item className="text-content">
+        <Grid xs={12} md={9} item className="text-content">
           Antonella Di Virgilio
         </Grid>
       </Grid>
       <Grid xs={12} item container alignItems="center">
-        <Grid xs={3} item className="text-bold-label">
+        <Grid xs={12} md={3} item className="text-bold-label">
           EMAIL
         </Grid>
-        <Grid xs={9} item className="text-content">
+        <Grid xs={12} md={9} item className="text-content">
           divirgilioantonella@gmail.com
         </Grid>
       </Grid>
