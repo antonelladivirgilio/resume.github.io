@@ -9,28 +9,27 @@ function PersonalInformation() {
       </Grid>
       <Grid xs={12} item container alignItems="center">
         <Grid xs={12} md={3} item className="text-bold-label">
-          FULL NAME
+          <Typography className="text-bold-label" gutterBottom>
+            FULL NAME
+          </Typography>
         </Grid>
         <Grid xs={12} md={9} item className="text-content">
-          Antonella Di Virgilio
+          <Typography gutterBottom>Antonella Di Virgilio</Typography>
         </Grid>
       </Grid>
       <Grid xs={12} item container alignItems="center">
         <Grid xs={12} md={3} item className="text-bold-label">
-          EMAIL
+          <Typography className="text-bold-label" gutterBottom>
+            EMAIL
+          </Typography>
         </Grid>
         <Grid xs={12} md={9} item className="text-content">
-          divirgilioantonella@gmail.com
+          <Typography gutterBottom>divirgilioantonella@gmail.com</Typography>
         </Grid>
       </Grid>
       <style>{`
         .text-content {
           font-size: 17px;
-        }
-        
-        .text-bold-label {
-          font-weight: 600;
-          font-size: 15px;
         }
         `}</style>
     </>
