@@ -2,15 +2,15 @@ import { createMuiTheme } from "@material-ui/core";
 
 export const theme = createMuiTheme({
   typography: {
-    fontFamily: ["Baloo Chettan 2"].join(",")
+    fontFamily: ["Baloo Chettan 2"].join(","),
   },
   overrides: {
     MuiPaper: {
       root: {
         padding: "20px 30px 30px",
         color: "#212121",
-        margin: "0 0 50px"
-      }
+        margin: "0 0 50px",
+      },
     },
     MuiTypography: {
       root: {
@@ -18,27 +18,31 @@ export const theme = createMuiTheme({
           color: "#212121",
           fontSize: "3rem",
           fontWeight: "500",
-          margin: "10px 0 30px"
+          margin: "10px 0 30px",
         },
         "&.MuiTypography-h2": {
           color: "#757575",
           fontSize: "1.75rem",
-          padding: "0 0 25px"
+          padding: "0 0 25px",
         },
         "&.MuiTypography-body1": {
           color: "#424242",
           fontSize: "18px",
-          padding: "0 0 10px"
+          padding: "0 0 10px",
         },
         "&.MuiTypography-body1.text-name": {
           fontWeight: 600,
-          fontSize: "24px"
+          fontSize: "24px",
         },
         "&.MuiTypography-body1.text-profession": {
           fontSize: "18px",
-          color: "#424242"
-        }
-      }
+          color: "#424242",
+        },
+        "&.text-bold-label": {
+          fontWeight: 600,
+          fontSize: "15px",
+        },
+      },
     },
     MuiButton: {
       root: {
@@ -48,35 +52,35 @@ export const theme = createMuiTheme({
         "&.MuiButton-outlined": {
           backgroundColor: "#fff",
           color: "#212121",
-          borderColor: "#4db6ac"
+          borderColor: "#4db6ac",
         },
         "&.MuiButton-contained": {
           backgroundColor: "#212121",
-          color: "#fff"
-        }
-      }
+          color: "#fff",
+        },
+      },
     },
     MuiDivider: {
       root: {
         margin: "25px 0 40px",
-        backgroundColor: "#9e9e9e"
-      }
+        backgroundColor: "#9e9e9e",
+      },
     },
     MuiAvatar: {
       root: {
-        margin: "10px 0 35px"
-      }
+        margin: "10px 0 35px",
+      },
     },
     MuiLinearProgress: {
       root: {
         margin: "5px 0 15px",
         "&.MuiLinearProgress-colorPrimary": {
-          backgroundColor: "#ddd"
+          backgroundColor: "#ddd",
         },
         "& .MuiLinearProgress-bar1Determinate": {
-          backgroundColor: "#4db6ac"
-        }
-      }
-    }
-  }
+          backgroundColor: "#4db6ac",
+        },
+      },
+    },
+  },
 });
