@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Typography, Divider, Hidden } from "@material-ui/core";
+import { Grid, Paper, Divider, Hidden } from "@material-ui/core";
 
 import Presentation from "../Presentation";
 import PersonalInformation from "../PersonalInformation";
