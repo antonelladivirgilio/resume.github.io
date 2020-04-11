@@ -58,6 +58,10 @@ export const theme = createMuiTheme({
           backgroundColor: "#212121",
           color: "#fff",
         },
+        "& a": {
+          color: "#ffffff",
+          textDecoration: "none",
+        },
       },
     },
     MuiDivider: {
