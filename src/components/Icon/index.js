@@ -7,7 +7,7 @@ function Icon({
   type,
   viewBox = "0 0 500 500",
   fill = "#000",
-  ...props
+  className = "icon-svg",
 }) {
   return (
     <>
@@ -18,9 +18,9 @@ function Icon({
         heigth={heigth}
         viewBox={viewBox}
         focusable="false"
-        role="presentation"
+        aria-hidden="true"
       >
-        <path {...props} fill={fill} d={paths[type]} />
+        <path className={className} fill={fill} d={paths[type]} />
       </svg>
     </>
   );

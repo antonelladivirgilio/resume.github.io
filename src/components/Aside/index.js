@@ -78,7 +78,7 @@ function Aside() {
           <Button variant="contained">
             <a
               href="./files/AntonellaDiVirgilio-Resume.pdf"
-              class="btn btn-default btn-lg"
+              className="btn btn-default btn-lg"
               target="_blank"
               rel="noopener noreferrer"
               download
