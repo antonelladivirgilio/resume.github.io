@@ -13,10 +13,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Grid container spacing={6}>
-          <Grid item xs={12} sm={5} md={4}>
+          <Grid item xs={12} md={5} lg={4}>
             <Aside></Aside>
           </Grid>
-          <Grid item xs={12} sm={7} md={8} role="main">
+          <Grid item xs={12} md={7} lg={8} role="main">
             <MainResume></MainResume>
           </Grid>
         </Grid>
