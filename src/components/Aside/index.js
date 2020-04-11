@@ -4,11 +4,11 @@ import { Grid, Avatar, Paper, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Icon from "../Icon";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(20),
-    height: theme.spacing(20)
-  }
+    height: theme.spacing(20),
+  },
 }));
 
 function Aside() {
@@ -75,7 +75,17 @@ function Aside() {
           </Grid>
         </Grid>
         <Grid item container justify="center">
-          <Button variant="contained">Download CV</Button>
+          <Button variant="contained">
+            <a
+              href="./files/AntonellaDiVirgilio-Resume.pdf"
+              class="btn btn-default btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              Download CV
+            </a>
+          </Button>
         </Grid>
       </Paper>
     </>
