@@ -4,6 +4,8 @@ import { Grid, Avatar, Paper, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Icon from "../Icon";
 
+import avatarImage from "../../assets/avatar.JPG";
+
 const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(20),
@@ -17,11 +19,11 @@ function Aside() {
     <>
       <Paper square role="complementary" elevation={3}>
         <Grid item container justify="center">
-          <Avatar
-            alt="face image"
-            src="/static/images/avatar/1.jpg"
-            className={classes.large}
-          />
+          <div
+            role="img"
+            aria-label="face"
+            className={`${classes.large} avatar`}
+          ></div>
         </Grid>
         <Grid item container justify="center">
           <Typography
@@ -48,9 +50,9 @@ function Aside() {
             >
               <Icon
                 type="github"
-                width={25}
-                heigth={25}
-                fill="#000"
+                width={30}
+                heigth={30}
+                fill="#BCD915"
                 viewBox="0 0 568 568"
                 alt="github logo"
               ></Icon>
@@ -65,9 +67,9 @@ function Aside() {
             >
               <Icon
                 type="linkedin"
-                width={25}
-                heigth={25}
-                fill="#000"
+                width={30}
+                heigth={30}
+                fill="#BCD915"
                 viewBox="0 0 512 512"
                 alt="linkedin logo"
               ></Icon>
@@ -88,6 +90,14 @@ function Aside() {
           </Button>
         </Grid>
       </Paper>
+      <style>{`        
+          .avatar {         
+            box-shadow: 13px 11px 0px #BCD915;  
+            border-radius: 3px;
+            background: url(${avatarImage}) 50%/cover no-repeat;         
+            margin: 0 0 40px;
+          }        
+        `}</style>
     </>
   );
 }

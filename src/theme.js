@@ -19,11 +19,16 @@ export const theme = createMuiTheme({
           fontSize: "3rem",
           fontWeight: "500",
           margin: "10px 0 30px",
+          textShadow: "3px -4px #BCD915",
         },
         "&.MuiTypography-h2": {
-          color: "#757575",
           fontSize: "1.75rem",
-          padding: "0 0 25px",
+          display: "inline-block",
+          margin: "0px 0 25px",
+          padding: "0 10px",
+          border: "3px solid #212121",
+          borderRadius: "3px",
+          boxShadow: "5px 5px 0 #BCD915",
         },
         "&.MuiTypography-body1": {
           color: "#424242",
@@ -52,14 +57,19 @@ export const theme = createMuiTheme({
         "&.MuiButton-outlined": {
           backgroundColor: "#fff",
           color: "#212121",
-          borderColor: "#4db6ac",
+          border: "3px solid #BCD915",
         },
         "&.MuiButton-contained": {
-          backgroundColor: "#212121",
-          color: "#fff",
+          backgroundColor: "#BCD915",
+          color: "#212121",
+          boxShadow: "none",
+        },
+        "&.MuiButton-contained:hover": {
+          backgroundColor: "#BCD915",
+          color: "#212121",
         },
         "& a": {
-          color: "#ffffff",
+          color: "#212121",
           textDecoration: "none",
         },
       },
@@ -78,11 +88,12 @@ export const theme = createMuiTheme({
     MuiLinearProgress: {
       root: {
         margin: "5px 0 15px",
+        boxShadow: "0px 1px 4px -1px",
         "&.MuiLinearProgress-colorPrimary": {
-          backgroundColor: "#ddd",
+          backgroundColor: "#eeeeee",
         },
         "& .MuiLinearProgress-bar1Determinate": {
-          backgroundColor: "#4db6ac",
+          backgroundColor: "#BCD915",
         },
       },
     },
