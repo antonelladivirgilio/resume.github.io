@@ -11,7 +11,7 @@ import MainResume from "./components/MainResume";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+      <div className="App" className="prueba">
         <Grid container spacing={6}>
           <Grid item xs={12} md={5} lg={4}>
             <Aside></Aside>
